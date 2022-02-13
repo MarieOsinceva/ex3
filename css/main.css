@@ -1,0 +1,254 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font: 1.65rem/1.2 Circe, sans-serif;
+  font-weight: 300;
+}
+h2{
+    font-family: "circe_600";
+    text-transform: uppercase;
+}
+.layout{
+  max-width: 1150px;
+  padding: 25px 0 70px 0;
+  margin: 0 auto;
+}
+button{
+    text-transform: uppercase;
+}
+.product{
+ display: flex;
+ justify-content: space-between;
+}
+
+.product__preview{
+    display: flex;
+    justify-content: space-between;
+}
+.product__gallery{
+    display: block;
+    justify-content: space-around;
+    max-height: 650px;
+    max-width:130px;
+
+}
+.product__gallery img{
+    width: 107px;
+    height: 160px;
+}
+
+.product__main  img{
+    max-width: 370px;
+    height: 555px;
+    margin-left: 20px;
+}
+.product__info img{
+    max-width: 30px;
+    max-height: 30px;
+}
+.product__share-list img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.product__share-list{
+    display: flex;
+}
+.product__gallery img+img{
+    margin-top: 32px;
+}
+.product__description{
+    margin-left: 40px;
+}
+.product__category a+a{
+    margin-left: 20px;
+    font-size: 14px;
+}
+.product__category a{
+    font-size: 14px;
+}
+a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.product__price-current::after, .product__price-promo::after {
+    content: "₽";
+}
+.product__counter {
+    margin-top: 20px;
+    display: flex;
+    margin-left: -5px;
+}
+.product__btn{
+    height: 40px;
+    min-width: 40px;
+    background-color: white;
+    padding: 0 15px;
+    border: 2px solid gainsboro;
+    line-height: 40px;
+
+}
+.product__btn-min{
+    border-radius: 3px 0 0 3px;
+}
+.product__btn-max{
+    border-radius: 0 3px 3px 0;
+}
+.product__counter-num{
+    border: 2px solid gainsboro;
+    height: 34px;
+    width: 40px;
+    background-color: gainsboro;
+    line-height: 40px;
+    text-align: center;
+
+}
+.product__button+.product__button{
+    margin-left: 40px;
+}
+
+.product__button{
+    height: 48px;
+    min-width: 170px;
+    margin-top: 50px;
+    background-color: white;
+    display: inline-block;
+    padding: 0 15px;
+    border: 2px solid gainsboro;
+    line-height: 48px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.65px;
+}
+.product__button--blue{
+    background-color: dodgerblue;
+    color: white;
+    border: 2px solid dodgerblue;
+}
+.product__price-old{
+    text-decoration: line-through;
+    color: gray;
+}
+button{
+    cursor: pointer;
+}
+.product__price-current{
+    color: gray;
+}
+.product__price{
+    margin-top:40px;
+    font-family: circe_600;
+    font-size: 20px;
+}
+.product__price-discount{
+    font-family: circe_300;
+    font-size: 16px;
+}
+.product__price-promo{
+    margin-left: 60px;
+}
+.product__info{
+    background-color: rgb(241,241,241);
+    max-width:340px;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+}
+.product__info img{
+    max-width: 20px;
+    max-height: 20px;
+    margin-left: 10px ;
+    vertical-align: bottom;
+}
+.product__info-space{
+    margin-left: 10px;
+}
+.product__text{
+    margin-top: 50px;
+    font-family: circe_300;
+    font-size: 16px;
+    color: #131313;
+}
+.product__share{
+    margin-top: 40px;
+    display: flex;
+    text-transform: uppercase;
+    color: #131313;
+    font-size: 15px;
+    line-height: 30px;
+}
+.product__share-list{
+    display: flex;
+}
+.product__share-list img{
+    max-width: 30px;
+    max-height: 30px;
+
+}
+.product__share-list {
+    margin-left: 13px;
+}
+.product__share-list a:not(:last-child){
+    margin: 0 13px 0 0;
+}
+.product__share-count{
+    background: #F6F5F5;
+    position: relative;
+    padding: 5px;
+    margin-left: 13px;
+    max-width: 30px;
+    max-height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: -5px;
+    font-size: 14px;
+    font-family: circe_300;
+}
+
+.product__share-count:before {
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #F6F5F5;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+@font-face {
+font-family: "circe_300";
+    src: url("../fonts/circe/circe_300.eot");
+    src: url("../fonts/circe/circe_300.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circe/circe_300.woff") format("woff"),
+    url("../fonts/circe/circe_300.eot");
+    url("../fonts/circe/circe_300.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circe/circe_300.woff") format("woff"),
+    url("../fonts/circe/circe_300.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+font-family: "circe_600";
+    src: url("../fonts/circe/circe_600.eot");
+    src: url("../fonts/circe/circe_600.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circe/circe_600.woff") format("woff"),
+    url("../fonts/circe/circe_600.eot");
+    url("../fonts/circe/circe_600.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circe/circe_600.woff") format("woff"),
+    url("../fonts/circe/circe_600.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+font-family: "circe_700";
+    src: url("../fonts/circe/circe_700.eot");
+    src: url("../fonts/circe/circe_700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circe/circe_700.woff") format("woff"),
+    url("../fonts/circe/circe_700.eot");
+    url("../fonts/circe/circe_700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/circe/circe_700.woff") format("woff"),
+    url("../fonts/circe/circe_700.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
